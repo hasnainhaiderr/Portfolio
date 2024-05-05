@@ -643,8 +643,9 @@
             // Get form data using FormData object
             const formData = new FormData(this);
             const data = {
+                to_name: "Hasnain",
                 name: formData.get('name'),
-                email: formData.get('email'),
+                reply_to: formData.get('email'),
                 subject: formData.get('subject'),
                 message: formData.get('message')
             };
